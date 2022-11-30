@@ -8,6 +8,7 @@ pipelines:
             type: host
         execution:
           onExecute:
+            - echo {{ gitBranch }}
             - printenv
       - name: sample_step_2
         type: Bash
