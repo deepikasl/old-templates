@@ -8,7 +8,6 @@ pipelines:
             type: host
         execution:
           onExecute:
-            - echo {{ rootBucket }}
             - printenv
       - name: sample_step_2
         type: Bash
